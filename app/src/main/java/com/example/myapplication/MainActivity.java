@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "HELLOMEACTIVITY";
+    private static final String TAG = "HELLO_ME_ACTIVITY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editName = (EditText) findViewById(R.id.editText);
         TextView textDisplay = (TextView) findViewById(R.id.textViewDisplay);
         String nameToDisplay = editName.getText().toString();
-        textDisplay.setText("Hello " + nameToDisplay);
-        Log.d(TAG, nameToDisplay + ", this is logging to your System!");
+        textDisplay.setText("Good Day " + nameToDisplay + "!!!!");
+        Log.d(TAG, "Hi! " + nameToDisplay + ", this is logging to the System!");
     }
 }
